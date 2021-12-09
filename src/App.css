@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 20px;
+  justify-content: center;
 }
 
 .App-logo {
@@ -35,4 +42,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  color: #e76f3d;
 }
