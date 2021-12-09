@@ -28,7 +28,7 @@ function App() {
       {!loading && (
         <>
           <PokeList pokemon={pokemon} />
-          <Controls query={query} setQuery={setQuery} />
+          <Controls query={query} setQuery={setQuery} setLoading={setLoading} />
         </>
       )}
     </div>
