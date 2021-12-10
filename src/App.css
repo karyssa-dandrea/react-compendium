@@ -1,13 +1,16 @@
 .App {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
-  height: 900px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   position: relative;
   gap: 20px;
   justify-content: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .App-logo {
@@ -49,4 +52,10 @@ h1 {
   display: flex;
   text-align: center;
   color: #e76f3d;
+}
+
+.pokeCard {
+  border: solid #e76f3d;
+  border-radius: 15%;
+  padding: 2rem;
 }
