@@ -35,22 +35,19 @@ function App() {
   return (
     <div className="App" style={{ backgroundImage: `url(${pokemonbackground})` }}>
       <h1>Pokedex</h1>
-      {loading && <span className="loader"></span>}
-      {!loading && (
-        <>
-          <PokeList pokemon={pokemon} loading={loading} setLoading={setLoading} />
-          <Controls
-            query={query}
-            setQuery={setQuery}
-            setLoading={setLoading}
-            types={types}
-            selectedType={selectedType}
-            setSelectedType={setSelectedType}
-            order={order}
-            setOrder={setOrder}
-          />
-        </>
-      )}
+      <Controls
+        query={query}
+        setQuery={setQuery}
+        setLoading={setLoading}
+        types={types}
+        selectedType={selectedType}
+        setSelectedType={setSelectedType}
+        order={order}
+        setOrder={setOrder}
+      />
+      {loading && <div className="loader">...Loading</div>}
+
+      {!loading && <PokeList pokemon={pokemon} loading={loading} setLoading={setLoading} />}
     </div>
   );
 }

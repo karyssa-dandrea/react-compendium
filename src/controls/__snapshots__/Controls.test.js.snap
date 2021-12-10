@@ -1,62 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the pokemon names 1`] = `
+exports[`renders the controls component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="pokedex"
-      >
-        <div
-          class="pokeCard"
+      <div>
+        <input
+          placeholder="Search Pokemon"
+          type="text"
+          value="clefairy"
+        />
+        <select>
+          <option
+            value="asc"
+          >
+            Ascending
+          </option>
+          <option
+            value="desc"
+          >
+            Descending
+          </option>
+        </select>
+        <select>
+          <option
+            value="all"
+          >
+            All
+          </option>
+          <option
+            value="fairy"
+          >
+            fairy
+          </option>
+        </select>
+        <button
+          class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButtonBase-root  css-11qr2p8-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
         >
-          <p />
-          <img
-            id="image"
-            style="height: 200px;"
+          Search
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
-          <p>
-            HP: 
-          </p>
-          <p>
-            Attack: 
-          </p>
-          <p>
-            Defense: 
-          </p>
-          <p>
-            Type: 
-          </p>
-        </div>
+        </button>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="pokedex"
-    >
-      <div
-        class="pokeCard"
+    <div>
+      <input
+        placeholder="Search Pokemon"
+        type="text"
+        value="clefairy"
+      />
+      <select>
+        <option
+          value="asc"
+        >
+          Ascending
+        </option>
+        <option
+          value="desc"
+        >
+          Descending
+        </option>
+      </select>
+      <select>
+        <option
+          value="all"
+        >
+          All
+        </option>
+        <option
+          value="fairy"
+        >
+          fairy
+        </option>
+      </select>
+      <button
+        class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButtonBase-root  css-11qr2p8-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
       >
-        <p />
-        <img
-          id="image"
-          style="height: 200px;"
+        Search
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
         />
-        <p>
-          HP: 
-        </p>
-        <p>
-          Attack: 
-        </p>
-        <p>
-          Defense: 
-        </p>
-        <p>
-          Type: 
-        </p>
-      </div>
+      </button>
     </div>
   </div>,
   "debug": [Function],

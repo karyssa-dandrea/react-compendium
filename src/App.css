@@ -59,3 +59,10 @@ h1 {
   border-radius: 15%;
   padding: 2rem;
 }
+
+.loader {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  background-color: cadetblue;
+}
