@@ -7,6 +7,7 @@
   position: relative;
   gap: 20px;
   justify-content: center;
+  background-size: cover;
 }
 
 .App-logo {
