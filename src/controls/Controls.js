@@ -7,6 +7,8 @@ export default function Controls({
   types,
   selectedType,
   setSelectedType,
+  order,
+  setOrder,
 }) {
   return (
     <div>
@@ -18,6 +20,10 @@ export default function Controls({
           setQuery(e.target.value);
         }}
       />
+      <select value={order} onChange={(e) => setOrder(e.target.value)}>
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
       <select value={selectedType} onChange={(e) => setSelectedType(e.target.value)}>
         <option value="all">All</option>
         {types.map((type) => (
